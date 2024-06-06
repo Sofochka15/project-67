@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body{
+                margin-left: 142px;
+                margin-bottom: 431px;
+                margin-top: 50px;
+            }
+            .table{
+                border: 0;
+            }
+            table,th,tr,td {
+                border:1px solid #dadada;
+                border-collapse: collapse;
+                height: 57px;
+                text-align: center;
+                font-weight: bold;
+            }
+            .th1{
+                width: 72px;
+            }
+            .th2{
+                width: 444px;
+                text-align:start;
+                padding-left: 3%;
+            }
+            .th3{
+                width: 276px;
+                color: red;
+                text-align: center;
+            }
+            .th4{
+                width: 251px;
+            }
+            .th5{
+                width: 251px;
+            }
+            .b1{
+                height: 36px;
+                    width: 115px;
+                    background-color: #ffd43a;
+                    border: 1px solid #ffd43a;
+                    font-weight: bold;
+            }
+            .b2{
+                height: 36px;
+                    width: 115px;
+                    background-color: #f00;
+                    border: 1px solid #f00;
+                    font-weight: bold;
+            }
+            .title{
+                margin-left: 11%;
+            }
+            .created{
+                margin-left: 10%;
+            }
+            input{
+                border: #e0e0e0;
+                border-radius: 1px;
+                margin-left: 2%;
+            }
+            .tr1{
+                text-align: start;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Search</h2>
+        <form>
+            <table class="table">
+                <tr class="tr1">
+            <th><label for="fname"><b>ID</b></label></th>
+            <th><label for="fname" class="title"><b>Title</b></label></th>
+            <th><label for="fname" class="created"><b>Created at</b></label></th>
+            <th><label for="fname" class="Action"><b>Action</b></label><br></th>
+       </tr>
+       <tr class="tr2">
+            <td><input type="number" placeholder="ID" minlength="11"></td>
+            <td><input type="text" placeholder="Title" size="50"></td>
+            <td><input type="number" placeholder="Created at"></td>
+            <td><input type="submit" value="search"></td>
+            </tr>
+            </table>
+        </form>
+        <h2>News Table</h2>
+        <table>
+            <thead>
+            <tr>
+              <th>ID</th>
+              <th class="th2">Title</th>
+              <th>Created at</th>
+              <th>Action</th>
+              <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td class="th1">1</td>
+              <td class="th2">Lorem Ipsum is simply dummy text of the printing and typesetting</td>
+              <td class="th3">2021/12/01</td>
+              <td class="th4"><button class="b1">Edit</button></td>
+              <td class="th5"><button class="b2">Edit</button></td>
+            </tr>
+            <tr>
+                <td class="th1">2</td>
+                <td class="th2">Lorem Ipsum is simply dummy text of the printing and typesetting</td>
+                <td class="th3">2021/12/01</td>
+                <td class="th4"><button class="b1">Edit</button></td>
+                <td class="th5"><button class="b2">Edit</button></td>
+              </tr>
+              <tr>
+                <td class="th1">3</td>
+                <td class="th2">Lorem Ipsum is simply dummy text of the printing and typesetting</td>
+                <td class="th3">2021/12/01</td>
+                <td class="th4"><button class="b1">Edit</button></td> 
+                <td class="th5"><button class="b2">Edit</button></td>
+            </tr>
+              <tr>
+                <td class="th1">4</td>
+                <td class="th2">Lorem Ipsum is simply dummy text of the printing and typesetting</td>
+                <td class="th3">2021/12/01</td>
+                <td class="th4"><button class="b1">Edit</button></td>
+                <td class="th5"><button class="b2">Edit</button></td>
+            </tr>
+              <tr>
+                <td class="th1">5</td>
+                <td class="th2">Lorem Ipsum is simply dummy text of the printing and typesetting</td>
+                <td class="th3">2021/12/01</td>
+                <td class="th4"><button class="b1">Edit</button></td>
+                <td class="th5"><button class="b2">Edit</button></td>
+            </tr>
+              <tr>
+                <td class="th1">6</td>
+                <td class="th2">Lorem Ipsum is simply dummy text of the printing and typesetting</td>
+                <td class="th3">2021/12/01</td>
+                <td class="th4"><button class="b1">Edit</button></td> 
+                <td class="th5"><button class="b2">Edit</button></td>
+            </tr>
+            </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
