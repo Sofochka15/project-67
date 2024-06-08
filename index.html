@@ -11,13 +11,58 @@
             }
             .table{
                 border: 0;
+                width: 1110px;
             }
-            table,th,tr,td {
+            .tr1{
+            text-align: start;
+           }
+           .tr2{
+            text-align: start;
+           }
+            input{
+                border: #e0e0e0;
+            }
+            #t1{
+                height: 45px;
+                width: 201px;
+                border-radius: 10px;
+            }
+            #t2{
+                height: 45px;
+                width: 593px;
+                border-radius: 10px;
+            }
+            #t3{
+                height: 45px;
+                width: 170px;
+                border-radius: 10px;
+            }
+            #t4{
+                height: 45px;
+                width: 115px;
+                border-radius: 10px;
+                background-color: #ffd43a;
+            }
+            .table2{
                 border:1px solid #dadada;
                 border-collapse: collapse;
-                height: 57px;
                 text-align: center;
                 font-weight: bold;
+                width: 1110px;
+                height: 342px; 
+                padding: 5px;
+            }
+            .table2>thead>tr>th{
+                height: 50px;
+            }
+            .table2 td{
+                border:1px solid #dadada;
+            }
+            .table2 tr{
+                border:1px solid #dadada;
+            }
+            .table2 th{
+                border:1px solid #dadada;
             }
             .th1{
                 width: 72px;
@@ -25,7 +70,8 @@
             .th2{
                 width: 444px;
                 text-align:start;
-                padding-left: 3%;
+                padding-left: 2%;
+
             }
             .th3{
                 width: 276px;
@@ -52,42 +98,28 @@
                     border: 1px solid #f00;
                     font-weight: bold;
             }
-            .title{
-                margin-left: 11%;
-            }
-            .created{
-                margin-left: 10%;
-            }
-            input{
-                border: #e0e0e0;
-                border-radius: 1px;
-                margin-left: 2%;
-            }
-            .tr1{
-                text-align: start;
-            }
         </style>
     </head>
     <body>
         <h2>Search</h2>
         <form>
-            <table class="table">
-                <tr class="tr1">
-            <th><label for="fname"><b>ID</b></label></th>
-            <th><label for="fname" class="title"><b>Title</b></label></th>
-            <th><label for="fname" class="created"><b>Created at</b></label></th>
-            <th><label for="fname" class="Action"><b>Action</b></label><br></th>
+        <table class="table">
+            <tr>
+            <th class="tr1"><label for="fname"><b>ID</b></label></th>
+            <th class="tr1"><label for="fname"><b>Title</b></label></th>
+            <th class="tr1"><label for="fname"><b>Created at</b></label></th>
+            <th class="tr1"><label for="fname"><b>Action</b></label><br></th>
        </tr>
-       <tr class="tr2">
-            <td><input type="number" placeholder="ID" minlength="11"></td>
-            <td><input type="text" placeholder="Title" size="50"></td>
-            <td><input type="number" placeholder="Created at"></td>
-            <td><input type="submit" value="search"></td>
+       <tr>
+            <td class="tr2"><input type="number" placeholder="ID" minlength="11" id="t1"></td>
+            <td class="tr2"><input type="text" placeholder="Title" size="50" id="t2"></td>
+            <td class="tr2"><input type="number" placeholder="Created at" id="t3"></td>
+            <td class="tr2"><input type="submit" value="search" id="t4"></td>
             </tr>
             </table>
         </form>
         <h2>News Table</h2>
-        <table>
+        <table class="table2">
             <thead>
             <tr>
               <th>ID</th>
@@ -143,5 +175,6 @@
             </tr>
             </tbody>
         </table>
+        </div>
     </body>
 </html>
